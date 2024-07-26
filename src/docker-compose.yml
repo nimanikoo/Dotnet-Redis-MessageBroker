@@ -1,0 +1,6 @@
+﻿services:
+  invoiceprocessor:
+    image: invoiceprocessor
+    build:
+      context: .
+      dockerfile: InvoiceProcessor/Dockerfile
