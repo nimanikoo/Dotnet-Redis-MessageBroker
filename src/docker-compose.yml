@@ -4,3 +4,21 @@
     build:
       context: .
       dockerfile: InvoiceProcessor/Dockerfile
+
+  orderprocessor:
+    image: orderprocessor
+    build:
+      context: .
+      dockerfile: OrderProcessor/Dockerfile
+
+  pricingprocessor:
+    image: pricingprocessor
+    build:
+      context: .
+      dockerfile: PricingProcessor/Dockerfile
+
+  orchestrator:
+    image: orchestrator
+    build:
+      context: .
+      dockerfile: Orchestrator/Dockerfile
